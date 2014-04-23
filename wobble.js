@@ -1,24 +1,8 @@
-//document.body.style.background = 'orange';
-
-
-$('*').each( function(){
-
-	
-	
-	//$(this).css("-webkit-filter","invert(100%)")
-	//$(this).css("-webkit-filter","grayscale(1.0)")
-
-    //if ($(this).css("display") === "block")
-      //  $(this).css("background", "red") ;   
-});
-
 var g_elems = new Array();
 var g_paragraphs = new Array();
 
-function begin()
+function beginGlitch()
 {
-
-
 	// grab elements
 	$('div,span').each( function(){
 	    if ( $(this).is(':visible') 
@@ -35,10 +19,9 @@ function begin()
 	    		font_family : $(this).css("font-family")
 	    	};
 
+            g_elems.push( obj );
+
 	    	//$(this).css("filter","invert(100%)")
-
-	    	g_elems.push( obj );
-
 	    	//$(this).css("position", "relative");
 	        //$(this).css("transform", "rotateY(130deg)");
 	    }
@@ -52,7 +35,6 @@ function chance( a_val )
 {
 	return Math.random() < a_val;
 }
-
 
 function tick() 
 {
@@ -101,23 +83,6 @@ function tick()
     	//obj.elem.css("background", "white") ; 	
 
     }
-/*
-    for( var i = 0; i < g_paragraphs.length; i++ )
-    {
-    	var obj = g_paragraphs[i];
-    	var elem = obj.p;
-
-    	if ( Math.random() < 0.001)
-    	{
-    		elem.text("...");
-    	}
-    	else
-    	{
-    		elem.text( obj.text );
-    	}
-
-    }*/
-    // ticking code goes here
 }
 
-//begin();
+//beginGlitch();

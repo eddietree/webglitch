@@ -1,1 +1,1 @@
-chrome.tabs.executeScript(null,{code:"begin();"});
+chrome.tabs.executeScript(null,{code:"beginGlitch();"});
