@@ -1,14 +1,19 @@
 {
   "manifest_version": 2,
 
-  "name": "web3000",
-  "description": "This extension glitches the web",
+  "name": "web.Glitch()",
   "version": "1.0",
+  "description": "Glitches the web",
+  "default_locale": "en",
 
   "browser_action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html"
   },
+
+  "icons": { "16": "icon16.png",
+           "48": "icon48.png",
+          "128": "icon128.png" },
 
    "content_scripts": [
         {
@@ -21,6 +26,6 @@
         }
     ], 
   "permissions": [
-    "https://secure.flickr.com/"
+    
   ]
 }
