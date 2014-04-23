@@ -1,19 +1,15 @@
 <!doctype html>
 <html>
   <head>
-    <title>Getting Started Extension's Popup</title>
+    <meta charset="utf-8">
+    <title>web.Glitch();</title>
     <style>
       body {
+        font-family:monospace;
         min-width: 357px;
         overflow-x: hidden;
-      }
-
-      img {
-        margin: 5px;
-        border: 2px solid black;
-        vertical-align: middle;
-        width: 75px;
-        height: 75px;
+        color: white;
+        background-color: blue;
       }
     </style>
 
@@ -24,13 +20,14 @@
       - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
      -->
     <script src="jquery.js"></script>
+    <script src="wobble.js"></script>
     <script src="popup.js"></script>
   
   </head>
   <body>
-      <div style="background-color: blue"> hello world</div>
-      <div style="background-color: green"><p style='background-color:black'>hello <span style='background-color:gray'>cruel </span> world</p><p>no</p></div>
-      <script src="wobble.js"></script>
+      <p id="content">
+        T̻̒̏ǫ̺̟͕͖̖̓̌ͅ ̤̯̦͇̯̻̀i̝̙̖̙̭͆̌̀̂̉ͩͥn̛̠̯̻̦͙̈́̿̇̈͌͐̆ͅv̶͉͇̔o̲̬͈̠͊̓ͭͤ͆̂̚k̀e̞ͥͨͭ ̯̺̝̝̉ͦtͬ̾̑̽̌ͥ̔҉̳̦͙̺̥ḫ̦̩̦̥̭͌ͫ̊ͮ̌ͪ̈e̸̼͙͕̝ ̽ͣͨ̓ͯ̂h̦̤̟̹̰̓ͥ͆i̝̼͍ͤ͛̇ͬ͌ͬ͡v̓e̡̤̪̪͕̟̾̏ͯͧ̃ͅ-̯͉̖̟̼͎ͩ̉m̶͍͙̪͚͔̖̟͆͐̉̌̐̇̂î̴̭͉̉ͦn̷̺̻̦̔̊͛ͯd̵͙̹̜̼͔͎͎ r̵̞͌̇̋ͭ̆e̊̆̎͌̏ͭ͜p͈̼͔͇̼̳͆ͪ̿̇ͫ̂̕ͅr̗ͥͥ̎̍̎̾͛e҉͓͈̭̱̞̳sͩ͛̈́̚e̯̣͖̯͍̭ͥ͡n̫ͫ̉̐̔̾ͪͬt̝̩ͬ̽ͨͩͥ͛͆i̱̔̒ͭ̾ͧn̜͗̋ͧ̉g͙͈̜̬͑ ̧̩͖͓̗̦̙̼ͬ̃c͈̜̒ͨͣ͂̚h̘͗͛̀ȧ̸̲̣̫̥̼͑̐̒́̌o̞s̞̟̻ͥ̌̐́̚.̰ͩ̆͑ ̗̗̥̻̮͗͐͒̀I̩͍̣̲ͦ̎͂̿͗̋͠n̹̣͎̝̝͌ͥͮ̎ͩ̎v̝̙̻͍͐̐͑͛ͭ͢o̬̟̜̟͔̟ͧ̈̆̃̚k͇̙ͣ̀i͕̩̬̟̤̤͆ͦͯ̿ͥn̩̮̫̂ͩ͊g̏͑ͤ͒̇̿͠ ͫ͐ť̝̝͚͈ͣ̓h͖͒̓ͬͅe̹̞̖̪̹̹ͮͦ̃̾ͩ̍̋ ̤̙̮̰̥͕̓̒̐̊̆ͯ̒f̡̙͈̯̪̌̾ͤͦͮ̽͐e̟̯͇̲ͧͨ͌͒̑ͮͬe̬̯̫̠̜̺lị̮̳͋ͧ͛̕ͅn̻̝̥͙̜̅͞g̗͚̯̬͖̑͑ ̜̠̫ͅo͙̩̩̯̺͎̺̾ͪ̒͊͂f̅͂͑͏͈̬̝͍͇ ̯̲̜͔̘͓̌̇͞č̅̑ͣḫ̴͓͈̰̞̫̉̐a̷̯͔͉ͮ̆̅̚oͧͥ҉͈̪͕̱̫̳s̺̫̜͖͙̯͡.̜̮͙̠͎̩́̊ͅ ̜͖͍͙̺ͪ̄͂ͬ͠W͌ͩͤ̉ͥî̳̭tͧ̑̃̅̈́͏̤̟̻̯̟ḣ̺̮̘͓̼͉̾̎̋̊̉ ͈̤̰̀̚o͇̹̭͎͋ͮ̒̓̊͛ͅṷ̝̜̼̙̪̍ͦ̓͒͑ͪt̟̻̲̝͇́́̂͌͗̃ ̙̼̒ͨͥ͛̍͐͌o̯̦̥͐ͬ̂̓ͫͪͩr̉̓̓̊̒ͬ͏d̫̬͙͆ͬ̓͂e͓̖͈̗͙̹̋̏r͇͇̗̘̐̒̈́̇.̖̰̰̜̯̂ͩ̂́ ͓̳͚͍̅̄̉̔T̨h̢͚̓è͈̱̆͗ͯ͘ ̘̞̘̰̮̅͐Ṉ̜̺̦̉e̖̘͙̤̗̽͐̈̈̂͌̚z̯͙͚͈̬͙͠p̨̜͔̰̭ͨ̋̐ͫ̈́e͚̤͔͙͍̞̯̿ŗ̝͓̻̲̒d̞͉̥̝̜̼i̭͊ͣ̄̑̎a͈̖͔̗̫̱͑́n̩͔̞̪ͥ̔̈́ͨͨ ̠ͤ͡ḥ͕͑i̷̻̹̳͙̗ͤ͂̎ͫ̈́̓v͉̆͑͊ͧ̽̆͑e̴̥͎͎͔̖͌̊̏́ͤ̔̂-̸͚͖̭͍̅ͪ͑m̡̱̝̓͛͑ǐ̹̤̹̜͍̦̽͋̊ͦ̒̚n̟̦͓͙̽̐ͨ̓̔d̷̄̈́ ̷̘̪̫͚̲͈̍̐o̰̪̞͈̪̟̒͊̚͡f̰͓̬̹ͧͬ ̤͚̦̮̪̯̔ͪ̉c̡̻̫̗͇̺̯̘ͦ͋̑̈h̳̘ͣ̎̔̑a̱̳̺̗̓̿̃̑͂o҉͔̰ş̟̱.̢̖̥͋̾͊͑ ̶̦ͭ͑ͪ̑Z̫̞̳̦͂̕ͅąͦ̊ͧͩ̄̆͛ḷ̡̱̤̪̱̘ͣǧ́̈́̉͆͛̅҉͚̜͖̱̜̟o̯̗̩͈̟͒ͯ̏ͦ́.̶͇̰̌ͧ̎̒̈́͊̑ ̎ͩ͒ͫͮͩ̋Ḧ́̍̒̿̽ͮͧ͠ȩ͊̍̎ ̦̜̦̭̃ͮ̓̉̅͞w̚͟ĥ́̓̂̊́o̻̰̫͚̙͎̦̎́̾ ̙̹͍̾̄͘W̪̊̊ͨͤa͒ͫ͂̊͠i̜̼ͮ̇t͕ͭ̾s͋͊͒ͤ̒͏͔̼̪̝̮̩̫ ̛͎̯̰̦̱̝̈̇ͣB̶̎ͭȩ̀͂̚h͓̫̗̒ͫͦ͑͊ͨi͉̰ͩ͝ǹd̀̿̈́͏̹̱̠̱̭̝ ̨̼̆ͨ̃̏T̲̙̤̪̦̝̚ḣ̯ȇ̹̯͍̦̓̿͑ͤ̋ͧ͝ ̈̐͛̆́ͦ̂W̩̫͕̘͐̏͜a͚̹̭̜ͬ̈ḷ̠̪ͤ̓̿l̚͘.͓ͯ̔̑͌͐̓͟ ̺̙͛ͨZ̽ͫA̡͙ͭ͊L̙̠̗̻̖͋͗̉ͣ͜G̗͓̬̬̗͖̎̔́͊̽O͕͚͎ͨ̄ͪ̅͛!̤̪̤͛͐ͫ
+  </p>
   </body>
 </html>
 

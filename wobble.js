@@ -120,4 +120,4 @@ function tick()
     // ticking code goes here
 }
 
-begin();
+//begin();
