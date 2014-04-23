@@ -65,8 +65,6 @@ function tick()
 
     		elem.css("background", chance(0.5) ? "black" : (chance(0.5)?"white":"blue") );
     		elem.css("color", chance(0.5) ? "black" : "white");
-
-    		
     		//elem.css("left", Math.random() < 0.5 ? -10 : 10);
     	}
     	else
