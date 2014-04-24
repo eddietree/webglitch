@@ -2,8 +2,8 @@
   "manifest_version": 2,
 
   "name": "web.Glitch()",
-  "version": "1.0",
-  "description": "do glitch on web by @eddietree",
+  "version": "1.0.1",
+  "description": "do glitch on web",
 
   "browser_action": {
     "default_icon": "icon.png",

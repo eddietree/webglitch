@@ -1,10 +1,18 @@
 var g_elems = new Array();
 var g_paragraphs = new Array();
+var g_isGlitching = false;
 
 function beginGlitch()
 {
+    if ( g_isGlitching )
+    {
+        return;
+    }
+
+    g_isGlitching = true;
+
 	// grab elements
-	$('div,span').each( function(){
+	$('div,span,td').each( function(){
 	    if ( $(this).is(':visible') 
 	    	//&& $(this).css("display") === "block"
 	    )
