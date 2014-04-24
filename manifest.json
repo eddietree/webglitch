@@ -5,6 +5,8 @@
   "version": "1.0.1",
   "description": "do glitch on web",
 
+  "short_name": "web.Glitch()",
+
   "browser_action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html"
@@ -25,6 +27,6 @@
         }
     ], 
   "permissions": [
-    "tabs", "http://*/*", "https://*/*"
+     "http://*/*", "https://*/*"
   ]
 }
